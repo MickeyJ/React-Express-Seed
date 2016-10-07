@@ -4,6 +4,7 @@ React Express Seed
 
 
 A starter kit for React with Express to serve it up.
+
 Ready to go with Webpack, SCSS, Redux, Axios, Mocha, and more.
 
 ________

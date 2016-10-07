@@ -1,6 +1,6 @@
 React Express Seed
 ==================
-*inspired by so many great tutorials*
+*inspired by great tutorials like [Stephen Grider: Advanced React and Redux](https://www.udemy.com/react-redux-tutorial/)*
 
 
 A starter kit for React with Express to serve it up.

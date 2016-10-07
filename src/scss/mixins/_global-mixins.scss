@@ -1,0 +1,12 @@
+
+@mixin resetMP{
+  margin: 0;
+  padding: 0;
+}
+
+@mixin crossBrowser($key, $value){
+  #{$key}: $value;
+  -webkit-#{$key}: $value;
+  -moz-#{$key}: $value;
+  -o-#{$key}: $value;
+}

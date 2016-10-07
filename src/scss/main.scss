@@ -1,0 +1,11 @@
+@import 'mixins/global-mixins';
+
+*{
+  @include crossBrowser(box-sizing, border-box)
+}
+
+html, body {
+  @include resetMP;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}

@@ -19,7 +19,7 @@ const config = {
       index: '/index.html'
     }
   },
-  devtool: DEV ? 'inline-source-map' : 'source-map',
+  devtool: DEV ? "#inline-source-map" : 'source-map',
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.EnvironmentPlugin(["NODE_ENV"]),
@@ -32,7 +32,7 @@ const config = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'react', 'stage-1']
+          presets: ['es2015', 'react', 'stage-0', 'react-hmre']
         }
       },
       {
@@ -52,11 +52,12 @@ const config = {
 };
 
 if(DEV){
-  config.module.loaders[0].query.presets.push('react-hmre');
   config.plugins.push(
     new OpenBrowserPlugin({ url: `http://${host}:8080` })
   )
 } else {
+  config.module.loaders[0].query.presets.pop();
+  console.log(config.module.loaders[0].query.presets);
   config.plugins.push(
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Landing = (props) => (
   <div>
-    <h1>Hello Clarice</h1>
+    <h4>Hello Clarice</h4>
   </div>
 );
 

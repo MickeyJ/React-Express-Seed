@@ -39,7 +39,7 @@ $ npm run dev
 
 ________
 
-Run Tests *I've included a couple*
+Run Tests - *I've included a couple*
 ```js
 $ npm test
 

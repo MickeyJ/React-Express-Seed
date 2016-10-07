@@ -14,11 +14,14 @@ import Main from './Containers/Main'
 import Landing from './Pages/Landing'
 import NotFound from './Pages/NotFound'
 
-if(JWT.fetch()){
+//—————————————————————————————————————————————————————
+// Check for user token before app loads.
+// Ideally this would be checked on the server as well.
+//—————————————————————————————————————————————————————
+if(JWT.fetch())
   store.dispatch({ type: AUTH_USER });
-} else {
+else
   store.dispatch({ type: UNAUTH_USER });
-}
 
 render(
   <Provider store={store}>

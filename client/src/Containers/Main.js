@@ -20,6 +20,7 @@ class Main extends Component {
         </main>
 
         <a href="https://github.com/MickeyJ/React-Express-Seed" target="_blank" >GitHub</a>
+
       </section>
     )
   }

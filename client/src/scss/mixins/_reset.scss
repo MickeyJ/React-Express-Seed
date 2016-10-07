@@ -36,11 +36,10 @@
     font-weight: 500;
     color: $_blue;
     text-decoration: none;
-    @include crossBrowser(transtion, color 0.15s);
+    @include crossBrowser(transition, color 0.1s);
 
     &:hover{
       color: $_purple;
-      text-decoration: underline;
     }
 
     &:active{

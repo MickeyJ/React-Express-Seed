@@ -1,7 +1,7 @@
 import {renderComponent, expect} from '../test_helper'
 import Main from '../../src/Containers/Main'
 
-describe('Default Layout', () =>{
+describe('Main Container', () =>{
 
   let component;
 

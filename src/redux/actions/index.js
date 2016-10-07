@@ -2,6 +2,8 @@ import axios from '../../utils/api'
 
 export function testRequest(){
   return function(dispatch){
-    axios.get('/test')
+    axios.get('/test').then(res =>{
+      console.log(res.data.message);
+    })
   }
 }

@@ -11,8 +11,8 @@ class Main extends Component {
 
   render(){
     return(
-      <div>
-        <h1>React Express Seed </h1>
+      <div id="all-wrapper">
+        <h1>React Express Seed</h1>
         {this.props.children}
       </div>
     )

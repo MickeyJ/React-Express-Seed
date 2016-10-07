@@ -1,0 +1,53 @@
+
+@mixin reset{
+
+  *{
+    @include crossBrowser(box-sizing, border-box)
+  }
+
+  html, body {
+    @include resetMP;
+    font-family: Open, sans-serif;
+    width: 100%;
+    height: 100%;
+    background: $_off-white;
+  }
+
+  h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+    padding: 5px 0 5px 0;
+    margin: 10px 0 10px 0;
+  }
+
+  p, span, a{
+    padding: 7px 0 7px 0;
+  }
+
+  p{
+    margin: 7px 0 7px 0;
+    font-weight: 300;
+  }
+
+  span{
+    font-weight: 100;
+  }
+
+  a{
+    font-weight: 500;
+    color: $_blue;
+    text-decoration: none;
+    @include crossBrowser(transtion, color 0.15s);
+
+    &:hover{
+      color: $_purple;
+      text-decoration: underline;
+    }
+
+    &:active{
+      color: $_red;
+    }
+
+  }
+
+
+}

@@ -1,9 +1,9 @@
 const webpack = require('webpack');
+const ip = require('ip').address();
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 const DEV = process.env.NODE_ENV==='development';
-// const ip = require('ip').address();
-// const host = ip === '127.0.0.1' ? 'localhost' : ip;
+// const host = ip;
 const host = 'localhost';
 
 const config = {

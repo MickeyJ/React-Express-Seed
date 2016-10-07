@@ -7,15 +7,14 @@
     "test": "mocha --compilers js:babel-core/register --require ./client/test/test_helper.js --recursive ./client/test",
     "test:watch": "npm run test -- --watch",
     "dev": "NODE_ENV=development webpack-dev-server --inline --hot",
-    "build": "NODE_ENV=production webpack"
+    "build": "npm test && NODE_ENV=production webpack -p"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
     "cors": "^2.8.1",
     "debug": "~2.2.0",
     "express": "~4.13.4",
-    "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
+    "morgan": "~1.7.0"
   },
   "devDependencies": {
     "axios": "^0.14.0",

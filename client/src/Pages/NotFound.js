@@ -1,9 +1,9 @@
 import React from 'react'
 
 const NotFound = (props) => (
-  <main>
-    <h1>Page Not Found</h1>
-  </main>
+  <section>
+    <h3>Page Not Found</h3>
+  </section>
 );
 
 export default NotFound

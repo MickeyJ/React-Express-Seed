@@ -11,10 +11,16 @@ class Main extends Component {
 
   render(){
     return(
-      <div id="all-wrapper">
+      <section id="all-wrapper">
+
         <h1>React Express Seed</h1>
-        {this.props.children}
-      </div>
+
+        <main>
+          {this.props.children}
+        </main>
+
+        <a href="https://github.com/MickeyJ/React-Express-Seed" target="_blank" >GitHub</a>
+      </section>
     )
   }
 }

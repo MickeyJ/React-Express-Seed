@@ -24,6 +24,7 @@ $ npm start
 $ nodemon
 ```
 *Make sure to start this first. The client and server are already hooked up.*
+  
 *You will see a success message in dev-tools console*
 
 ________

@@ -8,8 +8,9 @@ axios.defaults.baseURL = (
 );
 
 axios.interceptors.request.use(function (config) {
+  const token = JWT.fetch();
 
-  config.headers['authorization'] = JWT.fetch();
+  if(token) config.headers['authorization'] = token;
 
   return config;
 }, function (error) {
@@ -18,8 +19,6 @@ axios.interceptors.request.use(function (config) {
 });
 
 axios.interceptors.response.use(function (response) {
-
-  console.log(response.data.message);
 
   return response;
 }, function (error) {

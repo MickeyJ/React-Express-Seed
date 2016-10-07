@@ -1,6 +1,6 @@
 const testRequest = require('../controllers/test_request');
 
-module.exports = function(app){
+module.exports = (app) =>{
 
   app.get('/api/v1/test', testRequest);
 

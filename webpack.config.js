@@ -7,7 +7,7 @@ const DEV = process.env.NODE_ENV==='development';
 const host = 'localhost';
 
 const config = {
-  entry: './src',
+  entry: './client/src',
   output: {
     path:'./public',
     filename: 'bundle.js'

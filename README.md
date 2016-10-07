@@ -15,7 +15,7 @@ $ npm i
 
 ________
 
-Start the Express server
+Express server
 ```js
 $ npm start 
 
@@ -29,7 +29,7 @@ $ nodemon
 
 ________
 
-Start Webpack-Dev-Server 
+Webpack-Dev-Server 
 
 ```js
 $ npm run dev 
@@ -39,7 +39,7 @@ $ npm run dev
 
 ________
 
-Run tests
+Run Tests *I've included a couple*
 ```js
 $ npm test
 
